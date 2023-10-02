@@ -123,14 +123,15 @@ class _MiFormularioState extends State<MiFormulario> {
     'Seleccione una empresa',
     'DIACO S.A',
     'GRUPO REINA',
-    'TERIUM',
+    'TERNIUM',
     'PAZ DEL RIO',
     'SIDOC'
   ];
   @override
   Widget build(BuildContext context) {
     DateTime now = DateTime.now();
-    String formattedDate = '${now.day}-${now.month}-${now.year}';
+    String formattedDate =
+        '${now.day}-${now.month}-${now.year.toString().substring(2)}';
 
     final int cc = widget.cc;
     final String usuario = widget.usuario;

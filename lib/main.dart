@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 //import 'package:flutter/services.dart';
 import 'package:gruporv2/screens/prove_admin.dart';
 import 'package:gruporv2/screens/proveedores.dart';
+// ignore: depend_on_referenced_packages
 import 'package:intl/date_symbol_data_local.dart';
 
 import '../services/usuario_service.dart';

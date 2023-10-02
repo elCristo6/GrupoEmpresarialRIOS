@@ -1,3 +1,5 @@
+// ignore_for_file: file_names, depend_on_referenced_packages
+
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
@@ -451,7 +453,7 @@ class PDFService {
       pdfDocument.dispose();
       await saveAndLaunchFile(bytes, 'Output.pdf');
     } catch (e) {
-      print('Error: $e');
+      //print('Error: $e');
     }
   }
 }

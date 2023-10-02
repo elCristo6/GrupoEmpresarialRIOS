@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// ignore: depend_on_referenced_packages
 import 'package:intl/intl.dart';
 
 import '../models/remision.dart';
@@ -225,9 +226,9 @@ class _proveedor_screenState extends State<proveedor_screen> {
                             globalPosition.dy + 1,
                           ),
                           items: <PopupMenuEntry>[
-                            PopupMenuItem(
+                            const PopupMenuItem(
                               value: 1,
-                              child: const Row(
+                              child: Row(
                                 children: [
                                   Icon(Icons.print),
                                   SizedBox(width: 10),
@@ -235,9 +236,9 @@ class _proveedor_screenState extends State<proveedor_screen> {
                                 ],
                               ),
                             ),
-                            PopupMenuItem(
+                            const PopupMenuItem(
                               value: 2,
-                              child: const Row(
+                              child: Row(
                                 children: [
                                   Icon(Icons.qr_code_2),
                                   SizedBox(width: 10),
@@ -275,7 +276,7 @@ class _proveedor_screenState extends State<proveedor_screen> {
                                   children: [
                                     Text(
                                       //usuario.createdAt.substring(5, 7),
-                                      DateFormat('MMMM', 'es')
+                                      DateFormat('MMM', 'es')
                                           .format(remision.createdAt),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
